@@ -23,34 +23,36 @@
 
         <div class="date-birth">
 
-            <div class="day inbox">
+            <div class="inbox">
                 <label for="day">D a y</label>
-                <input type="text" id="day" minlength="2" maxlength="2" placeholder="DD" required autocomplete="off">
-                <p class="error" id="error-day"></p>
+                <input type="text" id="day" minlength="2" maxlength="2" placeholder="DD"  autocomplete="off">
+                <small></small>
             </div> 
 
-            <div class="month inbox">
+            <div class="inbox">
                 <label for="month">M o n t h</label>
-                <input type="text" id="month" minlength="2" maxlength="2" placeholder="MM" required autocomplete="off">
-                <p class="error" id="error-month"></p>
+                <input type="text" id="month" minlength="2" maxlength="2" placeholder="MM" autocomplete="off">
+                <small></small>
             </div>
 
-            <div class="year inbox">
+            <div class="inbox">
                 <label for="year">Y e a r</label>
                 <input type="text" id="year" minlength="4" maxlength="4" placeholder="YYYY" autocomplete="off">
-                <p class="error" id="error-year"></p>
+                <small></small>
             </div>
         </div>
 
         <div class="space">
             <p></p>
-            <button><img src="assets/images/icon-arrow.svg" alt="Down-Arrow"></button>
+            <button id="result-btn">
+                <img src="assets/images/icon-arrow.svg" alt="Down-Arrow">
+            </button>
         </div>
 
-        <div class="result">
-            <p><span>-- -- </span> Years</p>
-            <p><span>- - </span> Months</p>
-            <p><span>- - </span> Days</p>
+        <div class="result" id="getresult">
+            <p><span>--</span> Years</p>
+            <p><span>--</span> Months</p>
+            <p><span>--</span> Days</p>
         </div>
     </div>
 
