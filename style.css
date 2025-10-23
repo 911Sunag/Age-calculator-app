@@ -1,0 +1,103 @@
+:root{
+   --Purple500: hsl(259, 100%, 65%);
+   --Red400: hsl(0, 100%, 67%);
+   --White: hsl(0, 100%, 100%);
+   --Grey100: hsl(0, 0%, 94%);
+   --Grey200: hsl(0, 0%, 86%);
+   --Grey500: hsl(0, 1%, 44%);
+   --Black: hsl(0, 0%, 0%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    
+}
+body{
+    background-color: var(--Grey100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* dd-mm-yyyy */
+.main-card{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 50px;
+    width: 50%;
+    border-radius: 10px 10px 150px 10px;
+    margin-bottom: 20px;
+    height: 90vh ;
+}
+.date-birth{
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    gap: 1.5rem;
+}
+.inbox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    
+}
+.inbox label{
+    color: var(--Grey500);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.inbox input{
+    border: 2px solid var(--Grey200);
+    height: 7vh;
+    border-radius: 10px;
+    width: 8vw;   
+    padding: 18px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+.inbox #year{
+   width: 12vw;
+}
+.inbox input:focus{
+     outline: none;
+     border: 2px solid var(--Purple500);
+}
+.inbox input:hover{
+    cursor: pointer;
+    border: 2px solid var(--Purple500);
+}
+
+/* button */
+
+.space{
+    display: grid;
+    grid-template-columns: 15fr 1fr;
+    align-items: center;
+}
+.space img {
+    background-color: var(--Purple500);
+    height: 30px;
+    border-radius: 25px;
+}
+.space button{
+    border: none;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 55px;
+    background-color: var(--Purple500);
+}
+.space p{
+    width: 100%;
+    background-color: var(--Grey200);
+    height: 0.1rem;
+    border-radius: 5px;
+}

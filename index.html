@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+
+        <div class="date-birth">
+
+            <div class="day inbox">
+                <label for="day">D a y</label>
+                <input type="text" id="day" minlength="2" maxlength="2" placeholder="DD" required autocomplete="off">
+                <p class="error" id="error-day"></p>
+            </div> 
+
+            <div class="month inbox">
+                <label for="month">M o n t h</label>
+                <input type="text" id="month" minlength="2" maxlength="2" placeholder="MM" required autocomplete="off">
+                <p class="error" id="error-month"></p>
+            </div>
+
+            <div class="year inbox">
+                <label for="year">Y e a r</label>
+                <input type="text" id="year" minlength="4" maxlength="4" placeholder="YYYY" autocomplete="off">
+                <p class="error" id="error-year"></p>
+            </div>
+        </div>
+
+        <div class="space">
+            <p></p>
+            <button><img src="assets/images/icon-arrow.svg" alt="Down-Arrow"></button>
+        </div>
+
+        <div class="result">
+            <p><span>-- -- </span> Years</p>
+            <p><span>- - </span> Months</p>
+            <p><span>- - </span> Days</p>
+        </div>
+    </div>
+
+    <div class="attribution">
+       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+       Coded by <a href="#">Sunag Arigala</a>.
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
